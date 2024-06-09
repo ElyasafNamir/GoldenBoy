@@ -103,7 +103,7 @@ const HomeChild = (props) => {
       />
       <Button
         title="אני רוצה להשתמש בכסף"
-        color="#4525F2"
+        color="#6A2C70"
         onPress={() => {
           props.navigation.navigate("AskMoney");
         }}

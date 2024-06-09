@@ -7,7 +7,7 @@ var mongoose = require("mongoose");
 // Get chore
 
 router.get("/", function (req, res) {
-    let ids = req.query.chores.map(chore => new mongoose.Types.ObjectId(chore));
+    let ids = req.query.chores ? req.query.chores.map(chore => new mongoose.Types.ObjectId(chore)): [];
     Chore.find({ '_id': { $in: ids }, 'isFinished': false }, (err, chores) => {
         if (err) {
             return res.status(500).send("Error getting chores");

@@ -80,7 +80,7 @@ const Register = ({ navigation: { navigate } }) => {
       password: password,
     })
       .then(() => navigate("Login"))
-      .catch(() => {
+      .catch((error) => {
         showMessage({
           message: "אירעה שגיאה",
           description: "אנא בדוק את פרטייך ונסה מחדש",
@@ -88,6 +88,7 @@ const Register = ({ navigation: { navigate } }) => {
           textStyle: { textAlign: "right" },
           titleStyle: { textAlign: "right" },
         });
+        console.log(error)
         return;
       });
   };
@@ -120,7 +121,7 @@ const Register = ({ navigation: { navigate } }) => {
       </View>
       <View style={styles.footer}>
         <Text style={{ fontSize: 28, textAlign: "center" }}> איזה כיף שהחלטתם להירשם!! </Text>
-        <Text style={{ fontSize: 15, color: "#4525F2", marginTop: 10, marginBottom: 10, textAlign: "center" }}>
+        <Text style={{ fontSize: 15, color: "#FFB000", marginTop: 10, marginBottom: 10, textAlign: "center" }}>
           שימו לב- מלאו את הפרטים של אחד ההורים, שניכם תוכלו להתחבר יחד לאותו החשבון
         </Text>
         <View style={styles.form}>
@@ -157,7 +158,7 @@ const Register = ({ navigation: { navigate } }) => {
             onChangeText={(text) => setSecondPassword(text)}
           />
           <View style={{ marginTop: 20 }}>
-            <Button onPress={checkValidation} title="הרשם" color="#4525F2" />
+            <Button onPress={checkValidation} title="הרשם" color="#FFB000" />
           </View>
         </View>
       </View>

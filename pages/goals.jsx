@@ -151,7 +151,7 @@ const Goal = (props) => {
               כמה זה עולה?
             </CustomText>
             <TextInput
-              value={amount.toString()}
+              value={amount ? amount.toString(): ''}
               onChangeText={setAmount}
               style={styles.input} />
             <View style={{ flexDirection: "row" }}>
@@ -217,7 +217,7 @@ const styles = StyleSheet.create({
   headline: {
     fontSize: 40,
     marginTop: 15,
-    color: '#4525F2'
+    color: '#6A2C70'
   },
   value: {
     fontSize: 30,
@@ -242,12 +242,12 @@ const styles = StyleSheet.create({
     height: 178,
     borderRadius: 100,
     borderWidth: 1,
-    borderColor: '#4525F2'
+    borderColor: '#6A2C70'
   },
   smallHeadline: {
     fontSize: 20,
     marginTop: 15,
-    color: '#4525F2'
+    color: '#6A2C70'
   },
   text: {
     fontSize: 17,

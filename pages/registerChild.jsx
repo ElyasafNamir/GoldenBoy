@@ -157,7 +157,7 @@ const RegisterChild = ({ navigation: { navigate } }) => {
             onChangeText={(text) => setSecondPassword(text)}
           />
           <View style={{ marginTop: 20, marginBottom: 200 }}>
-            <Button onPress={checkValidation} title="הוספה" color="#4525F2" />
+            <Button onPress={checkValidation} title="הוספה" color="#6A2C70" />
           </View>
         </View>
       </View>

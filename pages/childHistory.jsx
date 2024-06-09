@@ -49,7 +49,7 @@ const childHistory = ({navigation: { navigate }}) => {
     selectedIndex={selectedTab}
     onChange={getRequestHistorybystatus}
     barColor="#a89af5"
-    indicatorColor="#4525F2"
+    indicatorColor="#6A2C70"
     activeTextColor="black"
     textStyle={{fontSize: 16,fontFamily: 'VarelaRound'}}
   />
@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
   headline: {
  fontSize: 30,
     marginTop: 80,
-    color:'#4525F2'
+    color:'#6A2C70'
   },
   value: {
     fontSize: 19,

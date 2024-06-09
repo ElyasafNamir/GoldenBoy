@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
         marginTop:30,
         alignItems: "center",
         borderRadius:30,
-        backgroundColor: "#4525F2",
+        backgroundColor: "#6A2C70",
         padding: 10
       },
       moneytype: {

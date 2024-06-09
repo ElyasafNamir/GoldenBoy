@@ -7,9 +7,16 @@ import * as Pages from "../index";
 
 const Stack = createStackNavigator();
 
+const theme = {
+  dark: false,
+  colors: {
+    primary: '#f0a911'
+  }
+}
+
 const NavContainer = () => {
   return (
-    <NavigationContainer>
+    <NavigationContainer theme={theme}>
       <Stack.Navigator
         screenOptions={{
           headerShown: false,

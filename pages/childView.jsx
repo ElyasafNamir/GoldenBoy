@@ -238,13 +238,13 @@ const styles = StyleSheet.create({
     smallHeadline: {
         fontSize: 20,
         marginTop: 15,
-        color: '#4525F2',
+        color: '#6A2C70',
         fontWeight: "bold"
     },
     minorHeadline: {
         fontSize: 20,
         marginTop: 15,
-        color: '#4525F2'
+        color: '#6A2C70'
     },
     date: {
         alignItems: "center",

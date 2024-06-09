@@ -130,7 +130,7 @@ const HomeParent = (props) => {
         style={{
           fontSize: 30,
           marginTop: 65,
-          color: "#4525F2",
+          color: "#6A2C70",
         }}>
         מצב הילדים שלי
       </CustomText>
@@ -140,6 +140,7 @@ const HomeParent = (props) => {
             onPress={() => {
               chooseToReduce();
             }}
+            color='#FFB000'
             title="הורד לכולם"
           />
         </View>
@@ -148,6 +149,7 @@ const HomeParent = (props) => {
             onPress={() => {
               chooseToAdd();
             }}
+            color='#FFB000'
             title="הוסף לכולם"
           />
         </View>
@@ -164,6 +166,7 @@ const HomeParent = (props) => {
                     chooseToReduce(item.child);
                   }}
                   title="-"
+                  color='#FFB000'
                 />
               </View>
               <View style={styles.plusButtonView}>
@@ -171,6 +174,7 @@ const HomeParent = (props) => {
                   onPress={(item) => {
                     chooseToAdd(item.child);
                   }}
+                  color='#FFB000'
                   title="+"
                 />
               </View>
@@ -199,6 +203,7 @@ const HomeParent = (props) => {
           onPress={() => {
             props.navigation.navigate("RegisterChild");
           }}
+          color='#FFB000'
           title="הוספת ילד"
         />
       </View>
@@ -222,11 +227,11 @@ const HomeParent = (props) => {
             <CustomText>ש"ח</CustomText>
             <View style={{ flexDirection: "row" }}>
               <View style={styles.modalButton}>
-                <Button color="#6C63FC" title="הוספה" onPress={addMoney} />
+                <Button color="#FFB000" title="הוספה" onPress={addMoney} />
               </View>
               <View style={styles.modalButton}>
                 <Button
-                  color="#6C63FC"
+                  color="#FFB000"
                   title="ביטול"
                   onPress={() => {
                     setAddMode(false);
@@ -254,11 +259,11 @@ const HomeParent = (props) => {
             <CustomText>ש"ח</CustomText>
             <View style={{ flexDirection: "row" }}>
               <View style={styles.modalButton}>
-                <Button color="#6C63FC" title="הורדה" onPress={reduceMoney} />
+                <Button color="#FFB000" title="הורדה" onPress={reduceMoney} />
               </View>
               <View style={styles.modalButton}>
                 <Button
-                  color="#6C63FC"
+                  color="#FFB000"
                   title="ביטול"
                   onPress={() => {
                     setReduceMode(false);
@@ -279,7 +284,7 @@ const styles = StyleSheet.create({
   ModalInsideView: {
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#63a5fc",
+    backgroundColor: "#6A2C70",
     height: 450,
     width: "80%",
     borderRadius: 30,
@@ -349,12 +354,12 @@ const styles = StyleSheet.create({
     height: 178,
     borderRadius: 100,
     borderWidth: 1,
-    borderColor: "#4525F2",
+    borderColor: "#6A2C70",
   },
   smallHeadline: {
     fontSize: 20,
     marginTop: 15,
-    color: "#4525F2",
+    color: "#6A2C70",
   },
   date: {
     alignItems: "center",

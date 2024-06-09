@@ -87,8 +87,8 @@ const History = (props) => {
   }
 
   const approveRequest = () => {
-    var reqId = { requestId }.requestId;
-    var childTzId = { childTz }.childTz;
+    var reqId = requestId;
+    var childTzId = childTz;
     var moneyChange = Math.abs({ amount }.amount);
     axios.all([
       AxiosInstance.put('request/approve/' + reqId, { status: '1' }),
@@ -197,7 +197,7 @@ const History = (props) => {
           selectedIndex={selectedTab}
           onChange={getRequestHistorybystatus}
           barColor="#a89af5"
-          indicatorColor="#4525F2"
+          indicatorColor="#6A2C70"
           activeTextColor="black"
           textStyle={{ fontSize: 16, fontFamily: 'VarelaRound' }}
         />
@@ -209,7 +209,7 @@ const History = (props) => {
             selectedIndex={selectedChildTab}
             onChange={getChildren}
             barColor="#6C63FF"
-            indicatorColor="#4525F2"
+            indicatorColor="#6A2C70"
             activeTextColor="black"
             textStyle={{ fontSize: 16, fontFamily: 'VarelaRound' }}
           />
@@ -251,7 +251,7 @@ const styles = StyleSheet.create({
   headline: {
     fontSize: 30,
     marginTop: 15,
-    color: '#4525F2'
+    color: '#6A2C70'
   },
   value: {
     fontSize: 30,
@@ -293,7 +293,7 @@ const styles = StyleSheet.create({
   historyheadline: {
     fontSize: 30,
     marginTop: 80,
-    color: '#4525F2'
+    color: '#6A2C70'
   },
   tablevalue: {
     fontSize: 19,

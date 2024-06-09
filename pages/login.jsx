@@ -38,7 +38,7 @@ const Login = ({ navigation: { navigate } }) => {
   };
   return (
     <View style={styles.view}>
-      <CustomText style={styles.welcome}>ברוך הבא ל- Dollarz !</CustomText>
+      <CustomText style={styles.welcome}>ברוך הבא ל- GOLDENBOY !</CustomText>
       <Image source={img} style={styles.img} />
       <CustomText style={styles.inputHeadline}>תעודת זהות</CustomText>
       <TextInput value={id} onChangeText={(id) => setId(id)} style={styles.input} />
@@ -58,6 +58,7 @@ export default Login;
 
 const styles = StyleSheet.create({
   welcome: {
+    color: '#FFB000',
     marginTop: 30,
     fontSize: 30,
   },
@@ -79,11 +80,12 @@ const styles = StyleSheet.create({
     borderRadius: 2,
   },
   inputHeadline: {
+    color: '#6A2C70',
     fontSize: 18,
     marginBottom: 15,
   },
   loginButton: {
-    color: "#3A23CD",
+    color: "#FFB000",
     marginTop: 40,
     fontSize: 16,
   },

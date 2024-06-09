@@ -4,6 +4,7 @@ import { showMessage } from "react-native-flash-message";
 import { CustomText } from "../common/CustomText";
 import { Button } from "../common/Button";
 import AxiosInstance from "../utils/AxiosInstance";
+import { useTheme } from "react-navigation";
 
 const imgSmiley = require("../assets/images/smiley.png");
 
@@ -63,7 +64,7 @@ const Chores = (props) => {
     if (props.parent) {
       return <View style={{ flexDirection: "row" }}>
         <View style={styles.modalButton}>
-          <Button onPress={() => { setVisibility(!visibility) }} title="הוספת מטלה חדשה" />
+          <Button color={'#FFB000'} onPress={() => { setVisibility(!visibility) }} title="הוספת מטלה חדשה" />
         </View>
       </View>;
     }
@@ -257,10 +258,10 @@ const Chores = (props) => {
               style={styles.input} />
             <View style={{ flexDirection: "row" }}>
               <View style={styles.modalButton}>
-                <Button color="#6C63FC" title="שמירה" onPress={saveNewChore} />
+                <Button color="#FFB000" title="שמירה" onPress={saveNewChore} />
               </View>
               <View style={styles.modalButton}>
-                <Button color="#6C63FC" title="ביטול" onPress={() => { setVisibility(!visibility) }} />
+                <Button color="#FFB000" title="ביטול" onPress={() => { setVisibility(!visibility) }} />
               </View>
             </View>
           </View>
@@ -276,7 +277,7 @@ const styles = StyleSheet.create({
   ModalInsideView: {
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: "#63a5fc",
+    backgroundColor: '#6A2C70',
     height: 450,
     width: '80%',
     borderRadius: 30,
@@ -317,7 +318,7 @@ const styles = StyleSheet.create({
   headline: {
     fontSize: 30,
     marginTop: 80,
-    color: '#4525F2'
+    color: '#6A2C70'
   },
   value: {
     fontSize: 30,
@@ -342,12 +343,12 @@ const styles = StyleSheet.create({
     height: 178,
     borderRadius: 100,
     borderWidth: 1,
-    borderColor: '#4525F2'
+    borderColor: '#6A2C70'
   },
   smallHeadline: {
     fontSize: 20,
     marginTop: 15,
-    color: '#4525F2'
+    color: '#6A2C70'
   },
   text: {
     fontSize: 17,
