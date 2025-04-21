@@ -1,5 +1,8 @@
 import axios from "axios";
 
+//when using mongodbcompass
+//mongodb+srv://nogaaram1:eFVxkK6F1htzxjiV@cluster.ptkjp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster
+
 // When using phone
 // const axiosConfig = {
 //   baseURL: "http://172.20.10.8:3000/",
