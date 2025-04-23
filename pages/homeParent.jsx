@@ -141,7 +141,7 @@ const HomeParent = (props) => {
               chooseToReduce();
             }}
             color='#FFB000'
-            title="הורד לכולם"
+            title="הורד"
           />
         </View>
         <View style={styles.modalButton}>
@@ -150,7 +150,7 @@ const HomeParent = (props) => {
               chooseToAdd();
             }}
             color='#FFB000'
-            title="הוסף לכולם"
+            title="הוסף"
           />
         </View>
       </View>
@@ -159,25 +159,6 @@ const HomeParent = (props) => {
         renderItem={({ item }) => {
           return (
             <View style={{ flexDirection: "row" }}>
-              <View style={styles.plusButtonView}>
-                <Button
-                  style={styles.plusButton}
-                  onPress={(item) => {
-                    chooseToReduce(item.child);
-                  }}
-                  title="-"
-                  color='#FFB000'
-                />
-              </View>
-              <View style={styles.plusButtonView}>
-                <Button
-                  onPress={(item) => {
-                    chooseToAdd(item.child);
-                  }}
-                  color='#FFB000'
-                  title="+"
-                />
-              </View>
               <View style={{ margin: 15 }}>
                 <CustomText style={styles.money}>
                   {item.child.money}
